@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      .grid-item {
+        @apply h-40 border-2 border-green-400 flex justify-center items-center bg-green-100 rounded-lg;
+      }
+
+      .coba-item {
+        @apply h-40 border-2 border-green-600 flex justify-center items-center bg-green-300 rounded-lg;
+      }
+    </style>
+
+    <title>Tailwind CSS</title>
+  </head>
+
+  <body>
+    <div class="bg-green-950 border-green-600 border-2">
+      <div class="sm:flex justify-between container mx-auto py-5">
+        <h1 class="font-bold text-white text-center">Portofolio Fahrah</h1>
+        <ul class="flex text-white space-x-10 justify-center mt-5 sm:mt-0">
+          <li><a href="">About</a></li>
+          <li><a href="">Portofolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="w-2/4 mx-auto my-5 border-2 border-gray-200 min-h-30 min-w-96 p-5 bg-gray-100 rounded-lg">
+      <h3 class="text-3xl text-center mb-3">Hallo, I'm Fahrah</h3>
+      Nama saya Fahrah Furaidah Sahrir IPJ, bisa dipanggil Fahrah. Tempat/Tanggal lahir saya di Makassar, 17 Desember 2008. Sekarang saya berumur 16 tahun. Bersekolah di SMKIT Ibnul Qayyim Makassar, kelas XI-B RPL.
+    </div>
+
+    <h3 class="text-3xl text-center mb-3">My Portofolio</h3>
+    <div class="w-4/6 my-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-2xl">
+      <div class="grid-item">Portofolio 1</div>
+      <div class="grid-item">Portofolio 2</div>
+      <div class="grid-item">Portofolio 3</div>
+      <div class="grid-item">Portofolio 4</div>
+      <div class="coba-item">Portofolio 5</div>
+      <div class="coba-item">Portofolio 6</div>
+      <div class="coba-item">Portofolio 7</div>
+      <div class="coba-item">Portofolio 8</div>
+    </div>
+  </body>
+</html>
